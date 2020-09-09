@@ -6,6 +6,7 @@ import { Wrapper, Header, BalanceContainer, BalanceTitle, Balance, Container } f
 import Suggestions from '../../components/Suggestions';
 import Activities from '../../components/Activities';
 import Tips from '../../components/Tips';
+import Banner from '../../components/Banner';
 
 const Home = () => {
 	return (
@@ -23,6 +24,7 @@ const Home = () => {
 				<Suggestions />
 				<Activities />
 				<Tips />
+				<Banner />
 			</Container>
 		</Wrapper>
 	);
