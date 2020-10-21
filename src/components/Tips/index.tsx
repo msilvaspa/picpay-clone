@@ -12,41 +12,43 @@ const items = [
 	{
 		key: String(Math.random()),
 		img: img8,
-		title: 'Pague suas contas sem sair de casa',
-		bgColor: '#172c4a',
+		title: 'Compre créditos para iFood',
+		bgColor: '#4ecc7e',
 	},
 	{
 		key: String(Math.random()),
 		img: img9,
-		title: 'Pague suas contas sem sair de casa',
-		bgColor: '#6a0159',
+		title: 'Conheça nossas promoções',
+		bgColor: '#f674a8',
 	},
 	{
 		key: String(Math.random()),
 		img: img10,
-		title: 'Pague suas contas sem sair de casa',
-		bgColor: '#4139c8',
+		title: 'Pague e receba com o Pix',
+		bgColor: '#317245',
+		color: '#FFF'
 	},
 	{
 		key: String(Math.random()),
 		img: img11,
 		title: 'Pague suas contas sem sair de casa',
-		bgColor: '#00ab4b',
+		bgColor: '#6882bb',
 	},
 	{
 		key: String(Math.random()),
 		img: img12,
 		title: 'Pague suas contas sem sair de casa',
-		bgColor: '#ba2f76',
+		bgColor: '#605dfd',
+		color: '#FFF'
 	},
 ];
 
 const Tips = () => {
 	return (
 		<Container>
-			{items.map(({ key, bgColor, title, img }) => (
+			{items.map(({ key, bgColor, title, img, color }) => (
 				<Option key={key} bgColor={bgColor}>
-					<Title>{title}</Title>
+					<Title color={color}>{title}</Title>
 					<Img source={img} />
 				</Option>
 			))}

@@ -13,14 +13,14 @@ export const Container = styled.ScrollView.attrs(() => ({
 export const Option = styled.TouchableOpacity`
 	background: ${({ bgColor }) => bgColor};
 	width: 150px;
-	height: 230px;
+	height: 190px;
 	border-radius: 8px;
 	padding: 15px;
 	justify-content: space-between;
 	margin-right:16px;
 `;
 export const Title = styled.Text`
-	color: #fff;
+	color: ${({color}) => color || '#000'};
 	font-size: 16px;
 	font-weight: bold;
 `;

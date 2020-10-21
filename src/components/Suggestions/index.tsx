@@ -18,8 +18,18 @@ const items = [
 	},
 	{
 		key: String(Math.random()),
+		img: img6,
+		label: 'Pagar\nConta',
+	},
+	{
+		key: String(Math.random()),
+		img: img7,
+		label: 'Cobrar',
+	},
+	{
+		key: String(Math.random()),
 		img: img2,
-		label: 'Uber',
+		label: '   Uber\nPré pago',
 	},
 	{
 		key: String(Math.random()),
@@ -35,16 +45,6 @@ const items = [
 		key: String(Math.random()),
 		img: img5,
 		label: 'Doações',
-	},
-	{
-		key: String(Math.random()),
-		img: img6,
-		label: 'Barras',
-	},
-	{
-		key: String(Math.random()),
-		img: img7,
-		label: 'FAQ',
 	},
 ];
 
