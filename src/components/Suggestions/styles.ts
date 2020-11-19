@@ -23,3 +23,19 @@ export const Label = styled.Text`
   margin-top: 8px;
   font-size: 14px;
 `;
+
+export const Tab = styled.View`
+flex-direction: row;
+`;
+
+export const TextWrapper = styled.View`
+  border-bottom-color: #FFF;
+  border-width: 2px;
+  margin: 0 1px 0 16px;
+`;
+
+export const TabText = styled.Text`
+  color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+`;

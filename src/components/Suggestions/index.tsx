@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Option, Img, Label } from './styles';
+import { Container, Option, Img, Label, Tab, TabText, TextWrapper } from './styles';
 
 import img1 from '../../images/01.png';
 import img2 from '../../images/02.png';
@@ -50,14 +50,24 @@ const items = [
 
 const Suggestions = () => {
 	return (
-		<Container>
-			{items.map(({ key, img, label }) => (
-				<Option key={key}>
-					<Img source={img} />
-					<Label>{label}</Label>
-				</Option>
-			))}
-		</Container>
+		<>
+			<Tab>
+				<TextWrapper>
+					<TabText>Sugestões</TabText>
+				</TextWrapper>
+				<TextWrapper>
+					<TabText>Favoritos</TabText>
+				</TextWrapper>
+			</Tab>
+			<Container>
+				{items.map(({ key, img, label }) => (
+					<Option key={key}>
+						<Img source={img} />
+						<Label>{label}</Label>
+					</Option>
+				))}
+			</Container>
+		</>
 	);
 };
 

@@ -7,6 +7,13 @@ export const Wrapper = styled.SafeAreaView`
 
 export const Container = styled.ScrollView``;
 
+export const GiftAndPercentContainer = styled.View`
+	width: 75px;
+	justify-content:space-between;
+	flex-direction: row;
+	/* justify-content:center; */
+`;
+
 export const Header = styled.View`
 	height: 50px;
 	padding: 0 16px;
@@ -15,7 +22,9 @@ export const Header = styled.View`
 	justify-content: space-between;
 `;
 
-export const BalanceContainer = styled.View``;
+export const BalanceContainer = styled.View`
+	margin-left: 40px;
+`;
 
 export const BalanceTitle = styled.Text`
 	color: rgba(255, 255, 255, 0.8);

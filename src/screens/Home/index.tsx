@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 
-import { Wrapper, Header, BalanceContainer, BalanceTitle, Balance, Container } from './styles';
+import { Wrapper, Header, BalanceContainer, BalanceTitle, Balance, Container, GiftAndPercentContainer } from './styles';
 import Suggestions from '../../components/Suggestions';
 import Activities from '../../components/Activities';
 import Tips from '../../components/Tips';
@@ -17,9 +17,13 @@ const Home = () => {
 
 					<BalanceContainer>
 						<BalanceTitle>Meu saldo</BalanceTitle>
-						<Balance>R$ 0,00</Balance>
+						<Balance>R$ 110.073,00</Balance>
 					</BalanceContainer>
-					<AntDesign name="gift" size={30} color="#10c86e" />
+
+					<GiftAndPercentContainer>
+						<AntDesign name="gift" size={30} color="#10c86e" />
+						<MaterialCommunityIcons name="sack-percent" size={30} color="#10c86e" />
+					</GiftAndPercentContainer>
 				</Header>
 				<Suggestions />
 				<Activities />

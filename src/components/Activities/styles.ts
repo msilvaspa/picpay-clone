@@ -5,13 +5,26 @@ export const Container = styled.View`
 	padding: 0 16px;
 `;
 
-export const Header = styled.View``;
+export const Header = styled.View`
+	flex-direction: row;
+	justify-content:space-between;
+`;
 
 export const Title = styled.Text`
 	color: #fff;
 	font-size: 18px;
 	font-weight: bold;
 `;
+
+export const SelectActivity = styled.View`
+	flex-direction:row
+`;
+
+export const Activity = styled.Text`
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	`;
 
 export const Card = styled.View`
 	background: #1e222b;
